@@ -51,29 +51,29 @@
       2. The director property as movieDirector.
       3. The releaseYear property as movieReleaseYear.
       4. The name property of the first cast member as leadActor.
-      5. The character property of the first cast member as leadCharacter.
+      5. The first actor as leadCharacter.
     */
-   const movie = {
+    const movie = {
       title: 'Inception',
       director: 'Christopher Nolan',
       releaseYear: 2010,
-      cast: [
+      first_actor:
         {
           name: 'Leonardo DiCaprio',
           character: 'Cobb'
         },
+      second_actor:
         {
           name: 'Joseph Gordon-Levitt',
           character: 'Arthur'
-        }
-      ]
+        },
     };
     //ENTER YOUR CODE HERE
     const movieTitle = movie.title;
     const movieDirector = movie.director;
     const movieReleaseYear = movie.releaseYear;
-    const leadActor = movie.cast[0].name;
-    const leadCharacter = movie.cast[0].character;
+    const leadActor = movie.first_actor.name;
+    const leadCharacter = movie.first_actor.character;
 
     /* 
     PROBLEM 5 (DEBUGGING): Given the object data below, extract properties from the object and assign them to variables.
@@ -92,8 +92,7 @@
     job: {
       title: 'Software Engineer',
       company: 'Tech Corp'
-    },
-    favorites: ['Pizza', 'Burgers', 'Pasta']
+    }
   };
   const company = data.job.company;
   const state = data.user.location.state;
