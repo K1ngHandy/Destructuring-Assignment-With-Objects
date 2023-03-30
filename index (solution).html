@@ -16,9 +16,7 @@
       city: 'New York'
     };
     //ENTER YOUR CODE HERE
-    const name = person.name;
-    const age = person.age;
-    const city = person.city;
+    const {name, age, city} = person;
      
     /* 
     PROBLEM 2: Given the object student below, extract properties from the object and assign them to variables.
@@ -69,11 +67,11 @@
         },
     };
     //ENTER YOUR CODE HERE
-    const movieTitle = movie.title;
-    const movieDirector = movie.director;
-    const movieReleaseYear = movie.releaseYear;
-    const leadActor = movie.first_actor.name;
-    const leadCharacter = movie.first_actor.character;
+    const { movieTitle } = movie;
+    const { movieDirector } = movie;
+    const { movieReleaseYear } = movie;
+    const { leadActor } = movie.first_actor;
+    const { leadCharacter } = movie.first_actor;
 
     /* 
     PROBLEM 5 (DEBUGGING): Given the object data below, extract properties from the object and assign them to variables.
@@ -94,9 +92,9 @@
       company: 'Tech Corp'
     }
   };
-  const company = data.job.company;
-  const state = data.user.location.state;
-  const title = data.job.title;
+  const { company } = data.job;
+  const { state } = data.user.location;
+  const { title } = data.job;
   </script> 
   <section style="border: 2px solid blue; border-radius: 5px; padding: 10px; box-shadow: 5px 3px 3px orange; margin-top: 20px;">
     <h3>About The Solutions</h3>
