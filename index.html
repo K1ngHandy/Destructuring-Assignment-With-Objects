@@ -15,7 +15,7 @@
       age: 30,
       city: 'New York'
     };
-    let {name, age, city} = person
+    let {name, age, city} = person;
     console.log(name, age, city);
      
     /* 
@@ -27,7 +27,7 @@
       firstName: 'John',
       lastName: 'Doe'
     };
-    let {id, firstName, lastName} = student
+    let {id, firstName, lastName} = student;
     console.log(id, firstName, lastName);
     
      /* 
@@ -38,7 +38,8 @@
       brand: 'Toyota',
       model: 'Corolla'
     };
-    //ENTER YOUR CODE HERE
+    let {brand, model} = car;
+    console.log(brand, model);
 
     /* 
     PROBLEM 4: Given the object movie below, extract properties from the object and assign them to variables.
@@ -63,7 +64,13 @@
         character: 'Arthur'
       },
     };
-    //ENTER YOUR CODE HERE
+    let {title, director, releaseYear, first_actor} = movie;
+    let movieTitle = title;
+    let movieDirector = director;
+    let movieReleaseYear = releaseYear;
+    let leadActor = first_actor.name;
+    let leadCharacter = first_actor.character;
+    console.log(movieTitle, movieDirector, movieReleaseYear, leadActor, leadCharacter);
 
     /* 
     PROBLEM 5 (DEBUGGING): The code below should extract the city, state, and title properties from the object 
