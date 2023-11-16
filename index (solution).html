@@ -55,23 +55,27 @@
       title: 'Inception',
       director: 'Christopher Nolan',
       releaseYear: 2010,
-      first_actor:
-        {
-          name: 'Leonardo DiCaprio',
-          character: 'Cobb'
-        },
-      second_actor:
-        {
-          name: 'Joseph Gordon-Levitt',
-          character: 'Arthur'
-        },
+      first_actor: {
+        name: 'Leonardo DiCaprio',
+        character: 'Cobb'
+      },
+      second_actor: {
+        name: 'Joseph Gordon-Levitt',
+        character: 'Arthur'
+      },
     };
     //ENTER YOUR CODE HERE
-    const { movieTitle } = movie;
-    const { movieDirector } = movie;
-    const { movieReleaseYear } = movie;
-    const { leadActor } = movie.first_actor;
-    const { leadCharacter } = movie.first_actor;
+    const { title: movieTitle } = movie;
+    const { director: movieDirector } = movie;
+    const { releaseYear: movieReleaseYear } = movie;
+    const { first_actor: { name: leadActor } } = movie;
+    const { first_actor: leadCharacter } = movie;
+    
+    console.log(movieTitle)
+    console.log(movieDirector)
+    console.log(movieReleaseYear)
+    console.log(leadActor)
+    console.log(leadCharacter)
 
     /* 
     PROBLEM 5 (DEBUGGING): Given the object data below, extract properties from the object and assign them to variables.

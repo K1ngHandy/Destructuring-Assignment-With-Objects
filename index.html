@@ -15,7 +15,8 @@
       age: 30,
       city: 'New York'
     };
-    //ENTER YOUR CODE HERE
+    let {name, age, city} = person
+    console.log(name, age, city);
      
     /* 
     PROBLEM 2: Given the object student below, extract properties from the object and assign them to variables.
@@ -26,7 +27,8 @@
       firstName: 'John',
       lastName: 'Doe'
     };
-    //ENTER YOUR CODE HERE
+    let {id, firstName, lastName} = student
+    console.log(id, firstName, lastName);
     
      /* 
     PROBLEM 3: Given the object car below, extract properties from the object and assign them to variables.
@@ -48,20 +50,18 @@
       4. The name property of the first cast member as leadActor.
       5. The first actor as leadCharacter.
     */
-   const movie = {
+    const movie = {
       title: 'Inception',
       director: 'Christopher Nolan',
       releaseYear: 2010,
-      first_actor:
-        {
-          name: 'Leonardo DiCaprio',
-          character: 'Cobb'
-        },
-      second_actor:
-        {
-          name: 'Joseph Gordon-Levitt',
-          character: 'Arthur'
-        },
+      first_actor: {
+        name: 'Leonardo DiCaprio',
+        character: 'Cobb'
+      },
+      second_actor: {
+        name: 'Joseph Gordon-Levitt',
+        character: 'Arthur'
+      },
     };
     //ENTER YOUR CODE HERE
 
